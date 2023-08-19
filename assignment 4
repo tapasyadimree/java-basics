@@ -1,0 +1,41 @@
+Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions)
+
+import java.util.Objects;
+import java.util.Scanner;
+
+public class assignment4 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("please enter first value : ");
+        float num1 = in.nextFloat();
+
+        System.out.print("please enter second value : ");
+        float num2 = in.nextFloat();
+
+        System.out.print("please enter the operation you want to perform : ");
+        String operator = in.next();
+
+
+
+        if(Objects.equals(operator, "+")){
+            float result = num1+num2;
+            System.out.println("result for the desired operation is : " + result);
+        } else if (Objects.equals(operator, "-")) {
+            float result = num1-num2;
+            System.out.println("result for the desired operation is : " + result);
+        } else if (Objects.equals(operator, "/")) {
+            float result = num1/num2;
+            System.out.println("result for the desired operation is : " + result);
+        } else if (Objects.equals(operator, "*")) {
+            float result = num1*num2;
+            System.out.println("result for the desired operation is : " + result);
+        } else if (Objects.equals(operator, "%")) {
+            float result = num1%num2;
+            System.out.println("result for the desired operation is : " + result);
+        } else {
+            System.out.println("enter a valid operator !");
+        }
+
+    }
+}
