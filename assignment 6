@@ -1,0 +1,15 @@
+Input currency in rupees and output in USD.
+
+import java.util.Scanner;
+
+public class assignment6 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("enter currency in rupees : ");
+        float inr = in.nextFloat();
+
+        double dollar = (inr/83.11);
+
+        System.out.println("amount equals " + dollar + " USD.");
+    }
+} 
